@@ -1,0 +1,311 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="qin.demo.MainActivity" >
+
+    <!-- <qin.demo.TestView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" /> -->
+
+    <!--
+    <FrameLayout
+        android:id="@+id/layout"
+        android:layout_width="660px"
+        android:layout_height="610px"
+        android:layout_gravity="center" >
+
+        <View
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:background="@drawable/line_right" />
+
+        <View
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/line_left" />
+
+        <com.syu.home.CustomTextView
+            android:id="@+id/view5"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="400px"
+            android:background="@drawable/ic_screen"
+            android:gravity="center"
+            android:text="双屏互动"
+            android:textColor="#ffffffff" />
+
+        <com.syu.home.CustomTextView
+            android:id="@+id/view4"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_marginLeft="168px"
+            android:layout_marginTop="430px"
+            android:background="@drawable/ic_settings"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#ffffffff" />
+
+        <com.syu.home.CustomTextView
+            android:id="@+id/view3"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_marginLeft="308px"
+            android:layout_marginTop="382px"
+            android:background="@drawable/ic_bt"
+            android:gravity="center"
+            android:text="蓝牙"
+            android:textColor="#ffffffff" />
+
+        <com.syu.home.CustomTextView
+            android:id="@+id/view2"
+            android:layout_width="220px"
+            android:layout_height="220px"
+            android:layout_marginLeft="408px"
+            android:layout_marginTop="240px"
+            android:background="@drawable/ic_media"
+            android:gravity="center"
+            android:text="媒体"
+            android:textColor="#ffffffff" />
+
+        <com.syu.home.CustomTextView
+            android:id="@+id/view1"
+            android:layout_width="220px"
+            android:layout_height="220px"
+            android:layout_marginLeft="385px"
+            android:layout_marginTop="40px"
+            android:background="@drawable/ic_radio"
+            android:gravity="center"
+            android:text="收音机"
+            android:textColor="#ffffffff" />
+
+        <com.syu.home.CustomTextView
+            android:id="@+id/view0"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="50px"
+            android:background="@drawable/ic_navi"
+            android:gravity="center"
+            android:text="导航"
+            android:textColor="#ffffffff" />
+    </FrameLayout>
+    -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="replace插入" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="insert插入" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="obj更新" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="new->old更新"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="obj+columns更新"
+                android:layout_column="1" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class删除"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除obj" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="obj+columns删除" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询所有" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="obj查询"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="obj+column查询"
+                android:layout_column="1" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查询所有columns"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="selection查询1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="selection查询2"
+                android:id="@+id/button14" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="groupByColumns查询" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="having查询"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="orderBy查询"
+                android:layout_column="1" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="limit查询"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/button23"
+                android:text="Button"
+                android:layout_column="1" />
+
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>

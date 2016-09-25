@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/build/intermediates/res/merged/debug/drawable-hdpi/ic_radio.png",
+        "source": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/src/main/res/drawable-hdpi/ic_radio.png"
+    },
+    {
+        "merged": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
+        "source": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/build/intermediates/res/merged/debug/drawable-hdpi/ic_settings.png",
+        "source": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/src/main/res/drawable-hdpi/ic_settings.png"
+    },
+    {
+        "merged": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/build/intermediates/res/merged/debug/drawable-hdpi/ic_bt.png",
+        "source": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/src/main/res/drawable-hdpi/ic_bt.png"
+    },
+    {
+        "merged": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/build/intermediates/res/merged/debug/drawable-hdpi/line_left.png",
+        "source": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/src/main/res/drawable-hdpi/line_left.png"
+    },
+    {
+        "merged": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/build/intermediates/res/merged/debug/drawable-hdpi/ic_media.png",
+        "source": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/src/main/res/drawable-hdpi/ic_media.png"
+    },
+    {
+        "merged": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/build/intermediates/res/merged/debug/drawable-hdpi/line_right.png",
+        "source": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/src/main/res/drawable-hdpi/line_right.png"
+    },
+    {
+        "merged": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/build/intermediates/res/merged/debug/drawable-hdpi/ic_navi.png",
+        "source": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/src/main/res/drawable-hdpi/ic_navi.png"
+    },
+    {
+        "merged": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/build/intermediates/res/merged/debug/drawable-hdpi/ic_screen.png",
+        "source": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/src/main/res/drawable-hdpi/ic_screen.png"
+    }
+]

@@ -9,16 +9,16 @@
  */
 package qin.tool.sql;
 
+import android.content.Context;
+import android.database.Cursor;
+import android.support.annotation.NonNull;
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 import qin.tool.utils.StringUtils;
-import android.animation.ArgbEvaluator;
-import android.content.Context;
-import android.database.Cursor;
-import android.support.annotation.NonNull;
-import android.util.Log;
 
 /**
  *类   名:DbUtils
@@ -196,10 +196,13 @@ public class DbUtils {
 			SQLDirect d = null;
 			if(table.hasPrimary) {
 				d = SQLDirectUtils.replaceDirect(table, object);
+				writeDatabase(d);
 			} else {
+				d = SQLDirectUtils.updateDirect(table,object);
+				writeDatabase(d);
 				d = SQLDirectUtils.insertDirect(table, object, true);
+				writeDatabase(d);
 			}
-			writeDatabase(d);
 		}
 	}
 

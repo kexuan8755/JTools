@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+        "outputFile": "/Users/JeoyQin/Downloads/AutolibsDemo/Tools/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 201
                 },
                 "from": {
-                    "file": "/Users/JeoyQin/Downloads/AutolibsDemo/JToolsDemo/src/main/res/values-v14/styles.xml",
+                    "file": "/Users/JeoyQin/Downloads/AutolibsDemo/Tools/src/main/res/values-v14/styles.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,

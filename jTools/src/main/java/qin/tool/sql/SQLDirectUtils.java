@@ -235,6 +235,7 @@ public class SQLDirectUtils {
 				}
 			} else {
 				if(StringUtils.findStringFromArray(columnNames, c.name)) {
+					buffer.append(!hasadd ? "" : " AND ");
 					buffer.append(c.name + " = ");
 					buffer.append(c.valueEntry.toValueName(c.getValueFromObj(obj), c.defValue + ""));
 					if(!hasadd) hasadd = true;
@@ -307,6 +308,7 @@ public class SQLDirectUtils {
 				}
 			} else {
 				if(StringUtils.findStringFromArray(columnNames, c.name)) {
+					buffer.append(!hasadd ? "" : " AND ");
 					buffer.append(c.name + " = ");
 					buffer.append(c.valueEntry.toValueName(c.getValueFromObj(obj), c.defValue + ""));
 					if(!hasadd) hasadd = true;
@@ -377,6 +379,7 @@ public class SQLDirectUtils {
 				}
 			} else {
 				if(StringUtils.findStringFromArray(columnNames, c.name)) {
+					buffer.append(!hasadd ? "" : " AND ");
 					buffer.append(c.name + " = ");
 					buffer.append(c.valueEntry.toValueName(c.getValueFromObj(select), c.defValue + ""));
 					if(!hasadd) hasadd = true;

@@ -4,32 +4,32 @@ JTools for android
 
 DbUtils:
 数据列类型
-public enum ColumnType {
-	COLUMN,//普通数据列
-	PRIMARY,//主键值
-	UNIQUE, //数据列唯一限制
-	FOREIGN,//外健限制
-	EQUALS   //对象相等默认的比较数据
-}
+	public enum ColumnType {
+		COLUMN,//普通数据列
+		PRIMARY,//主键值
+		UNIQUE, //数据列唯一限制
+		FOREIGN,//外健限制
+		EQUALS   //对象相等默认的比较数据
+	}
 对于数据列定义通常会有Primary、Unique、Foreign，很多时候我们用不上这些定义，当时又想有默认的比对条件所以引入了Equals类型；Column只是一个普通行。
 
 这样定义一个数据表的信息，当使用DbUtils操作增删改查时将自动引入数据库操作
-@Table
-public class Person {
-	@Column(notNull=true)
-	int id;
-	@Column(type=ColumnType.UNIQUE)
-	String name;
-	@Column
-	String number;
-	public Person(){}
-	public Person(int id, String name, String number){
-		this.id = id;
-		this.name = name;
-		this.number = number;
+	@Table
+	public class Person {
+		@Column(notNull=true)
+		int id;
+		@Column(type=ColumnType.UNIQUE)
+		String name;
+		@Column
+		String number;
+		public Person(){}
+		public Person(int id, String name, String number){
+			this.id = id;
+			this.name = name;
+			this.number = number;
+		}
+		……
 	}
-	……
-}
 
 添加或者替换
 	public void replace(final Person person) {

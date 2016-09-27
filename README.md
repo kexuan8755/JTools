@@ -4,6 +4,7 @@ JTools for android
 
 DbUtils:
 数据列类型
+
 	public enum ColumnType {
 		COLUMN,//普通数据列
 		PRIMARY,//主键值
@@ -14,6 +15,7 @@ DbUtils:
 对于数据列定义通常会有Primary、Unique、Foreign，很多时候我们用不上这些定义，当时又想有默认的比对条件所以引入了Equals类型；Column只是一个普通行。
 
 这样定义一个数据表的信息，当使用DbUtils操作增删改查时将自动引入数据库操作
+
 	@Table
 	public class Person {
 		@Column(notNull=true)
@@ -32,6 +34,7 @@ DbUtils:
 	}
 
 添加或者替换
+
 	public void replace(final Person person) {
 		TaskUtils.asyncExec(new TaskUtils.Task<Person>() {
 			@Override
@@ -42,6 +45,7 @@ DbUtils:
 	}
 
 添加
+
 	public void insert(final Person person) {
 		TaskUtils.asyncExec(new TaskUtils.Task<Person>() {
 			@Override
@@ -52,6 +56,7 @@ DbUtils:
 	}
 
 更新
+
 	public void update(final Person old, final Person np) {
 		TaskUtils.asyncExec(new TaskUtils.Task<Void>() {
 			@Override
@@ -71,6 +76,7 @@ DbUtils:
 	}
 	
 删除
+
 	public void delete() {
 		TaskUtils.asyncExec(new TaskUtils.Task<Void>() {
 			@Override
@@ -90,6 +96,7 @@ DbUtils:
 	}
 
 查询
+
 	public void query() {
 		TaskUtils.asyncExec(new TaskUtils.Task<List<Person>>() {
 			@Override
